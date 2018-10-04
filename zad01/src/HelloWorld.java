@@ -1,4 +1,4 @@
-
+package pl.zad01;
  
 public class HelloWorld{
 
