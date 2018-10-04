@@ -1,4 +1,4 @@
-package pl.zad01;
+package pl.pawełszczupak.zad01;
  
 public class HelloWorld{
 
