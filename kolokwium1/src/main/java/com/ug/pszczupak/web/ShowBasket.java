@@ -62,11 +62,11 @@ public class ShowBasket extends HttpServlet{
 		}
 	
 		
-		out.append("<form method='get' action='/zad04/FormaRodo.jsp'>" + 
+		out.append("<form method='get' action='/kolokwium1/FormaRodo.jsp'>" + 
 				"    <button type='submit'>Kup Motocykle</button>" + 
 				"</form>");
 		
-		out.append("<a href='/zad04/Index'>Przejdz do Start</a></body></html>");
+		out.append("<a href='/kolokwium1/Index'>Przejdz do Start</a></body></html>");
 		
 		out.close();
 

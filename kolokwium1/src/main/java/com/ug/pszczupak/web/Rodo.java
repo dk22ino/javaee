@@ -24,9 +24,9 @@ public class Rodo extends HttpServlet {
 	        	if(request.getParameterNames().nextElement().equals("rEmail"))
 	        	{
 	        		if(request.getParameter("email")!="")
-	        			response.sendRedirect("/zad04");
+	        			response.sendRedirect("/kolokwium1");
 	        		else
-	        			response.sendRedirect("/zad04/index.jsp");
+	        			response.sendRedirect("/kolokwium1/index.jsp");
 	        	}
 	        	response.sendRedirect("/zad04/Index");
 	        }
@@ -36,11 +36,11 @@ public class Rodo extends HttpServlet {
 	        	if(request.getParameterNames().nextElement().equals("rEmail"))
 	        	{
 	        		if(request.getParameter("email")!=null)
-	        			response.sendRedirect("/zad04/Index");
+	        			response.sendRedirect("/kolokwium1/Index");
 	        		else
-	        			response.sendRedirect("/zad04/Index");
+	        			response.sendRedirect("/kolokwium1/Index");
 	        	}
-	        	response.sendRedirect("/zad04/Index");
+	        	response.sendRedirect("/kolkwium1/Index");
 	        }
 	        
 	        

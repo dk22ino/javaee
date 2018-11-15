@@ -31,7 +31,29 @@ public class NewsletterUser {
 	private Date dataOd;
 	private Date dataDo;
 	private String tematyka;
+	private String czestosc;
 	
+	
+	public NewsletterUser() {
+		super();
+
+	}
+
+	public NewsletterUser(String imie, Date dataOd ,Date dataDo ,String tematyka ,String czestosc) {
+		super();
+		this.imie = imie;
+		this.dataOd = dataOd;
+		this.dataDo = dataDo;
+		this.tematyka = tematyka;
+		this.czestosc = czestosc;
+		
+	}
+	public String getCzestosc() {
+		return czestosc;
+	}
+	public void setCzestosc(String czestosc) {
+		this.czestosc = czestosc;
+	}
 	
 	
 }

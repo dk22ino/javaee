@@ -23,9 +23,9 @@ public class Index extends HttpServlet {
 	        out.println("<html><body><h1>Komis Motocyklowy</h1> <br>" +
 	                "Menu: <br>" +
 	                "<ul>" +
-	                "<li><a href='/zad04/addMotorcycle'>Dodaj Motocykl</a></li>" +
-	                "<li><a href='/zad04/showMotorcycles'>Wyswietl Motory</a></li>" +
-	                "<li><a href='/zad04/showBasket'>Twoj Koszyk</a></li>" +
+	                "<li><a href='/kolokwium1/addMotorcycle'>Dodaj Motocykl</a></li>" +
+	                "<li><a href='/kolokwium1/showMotorcycles'>Wyswietl Motory</a></li>" +
+	                "<li><a href='/kolokwium1/showBasket'>Twoj Koszyk</a></li>" +
 	                "</ul>" +
 	                "</body></html>");
 	        out.close();
