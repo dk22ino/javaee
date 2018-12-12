@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "a95e64ca-327b-4f1f-9a65-aa4540fa0046",
+		"name": "zad05",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dodawanie Motocyklu 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t{\n\t\t\"nazwa\": \"Honda\",\n\t\t\"pojemnosc\": 2009,\n\t\t\"przebieg\": 20000.998\n\t}\n"
+				},
+				"url": {
+					"raw": "localhost:8080/restwsejbdemo/api/Motocykl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restwsejbdemo",
+						"api",
+						"Motocykl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/restwsejbdemo/api/Motocykl/test",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restwsejbdemo",
+						"api",
+						"Motocykl",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dodawanie Motocyklu 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nazwa\": \"Yamaha\",\n\t\"pojemnosc\": 2344,\n\t\"przebieg\": 2333.5\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/restwsejbdemo/api/Motocykl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restwsejbdemo",
+						"api",
+						"Motocykl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuwa wszystko",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/restwsejbdemo/api/Motocykl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restwsejbdemo",
+						"api",
+						"Motocykl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wyswietl Wszystko",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/restwsejbdemo/api/Motocykl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restwsejbdemo",
+						"api",
+						"Motocykl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

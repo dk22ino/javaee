@@ -25,10 +25,10 @@ public class MotocyklRESTService {
     private MotocyklManager mm;
 
     @GET
-    @Path("/{motocyklId}")
+    @Path("/{nazwa}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Motocykl getMotocykl(@PathParam("motocyklId") Integer id) {
-        Motocykl m = mm.getMotocykl(id);
+    public Motocykl getMotocykl(@PathParam("nazwa") String nazwa) {
+        Motocykl m = mm.getMotocykl(nazwa);
         return m;
     }
 

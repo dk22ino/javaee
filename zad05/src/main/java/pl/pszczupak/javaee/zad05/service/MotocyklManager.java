@@ -21,7 +21,7 @@ public class MotocyklManager {
         db.remove(motocykl);
     }
 
-    public Motocykl getMotocykl(Integer id) {
+    public Motocykl getMotocykl(String nazwa) {
         return new Motocykl("Yamaha RX-660", 600, 19999.9);
     }
 
