@@ -9,9 +9,7 @@ public class Motocykl{
 	private int pojemnosc;
 	private double przebieg;
 
-
-	public Motocykl() 
-	{
+	public Motocykl() {
 		
 	}
 	
@@ -41,5 +39,30 @@ public class Motocykl{
 		this.przebieg = przebieg;
 	}
 	
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((nazwa == null) ? 0 : nazwa.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Motocykl other = (Motocykl) obj;
+		if (nazwa == null) {
+			if (other.nazwa != null)
+				return false;
+		} else if (!nazwa.equals(other.nazwa))
+			return false;
+		return true;
+	}
 	
 }
