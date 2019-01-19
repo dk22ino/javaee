@@ -11,5 +11,6 @@
         <h2>Witamy w sklepie z Twisterem</h2>
         <p><a href="dodajTwister.jsp">Dodaj gre twister do sklepu</a></p>
 		<p><a href="Asortyment.jsp">Wyswietl Asortyment</a></p>
+		<p><a href="wyswietlKoszyk.jsp">Wyswietl Koszyk</a></p>
     </body>
 </html>

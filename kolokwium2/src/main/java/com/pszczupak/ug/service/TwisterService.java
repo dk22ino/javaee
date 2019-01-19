@@ -39,5 +39,15 @@ public class TwisterService {
 	}
 	
 	
+	public int ile() {
+		int licznik=0;
+		for(Twister moto : db)
+		{
+			licznik++;
+		}
+		return licznik;
+	}
+	
+	
 	
 }

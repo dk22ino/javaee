@@ -27,7 +27,7 @@
 		
 
   		
-  	</br> Jaki Przedzial wiekowy do gry:
+  	</br> Jaki Przedzial wiekowy do gry:</br>
 	Dzieci: <input type="radio" name="wiek" value='dzieci' 	/></br>
 	Mlodziez: <input type="radio" name="wiek" value='mlodziez' /></br>
 	Dorosli: <input type="radio" name="wiek" value='dorosli'  /></br>

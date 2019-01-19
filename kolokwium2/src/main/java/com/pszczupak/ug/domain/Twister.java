@@ -105,4 +105,29 @@ public class Twister {
 		this.trojkat = trojkat;
 	}
 	
+	
+	
+	public String TwisterInfo() {
+		String kategoria = "";
+		if(this.dorosli) {kategoria = "Dorosli";}
+		if(this.mlodziez) {kategoria = "Mlodziez";}
+		if(this.dzieci) {kategoria = "Dzieci";}
+		
+		String elementy = "";
+		if(this.kolo) {elementy = "Kolo ";}
+		if(this.kwadrat) {elementy = "Kwadrat ";}
+		if(this.trojkat) {elementy = "Trojkat";}
+		
+		
+		
+		
+		return "Twister nazwa: "  + this.nazwa + "</br>" +
+				"Twister cena: "  + this.cena  + "</br>" +
+				"Twister data produkcji: " + this.dataProdukcji + "</br>" +
+				"Twister kategoria wiekowa: " + kategoria + "</br>" +
+				"Twister elementy: " + elementy + "</br>";
+	}
+	
+	
+	
 }

@@ -26,20 +26,29 @@
 	twist.setDzieci(false);
 	twist.setMlodziez(false);
 	twist.setDorosli(false);
-
+	
+	if(s != null){
 	if(s.equals("dzieci")){twist.setDzieci(true);}
 	if(s.equals("mlodziez")){twist.setMlodziez(true);}
 	if(s.equals("dorosli")){twist.setDorosli(true);}
-
+	}
+	
+	
 	twist.setKolo(false);
 	twist.setKwadrat(false);
 	twist.setTrojkat(false);
+
+if(request.getParameterValues("figura") != null){
 	
 	for(String x: request.getParameterValues("figura")){
 		if(x.equals("kolo")){twist.setKolo(true);}
 		if(x.equals("kwadrat")){twist.setKwadrat(true);}
 		if(x.equals("trojkat")){twist.setTrojkat(true);}
+
 	}
+}
+
+	
 	
 	DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
@@ -57,8 +66,14 @@
 %>
 
 
+<body>
+<h3>Dodano Pomyslnie</h3>
 
+<%
+	out.append(twist.TwisterInfo());
+%>>
 
-<a href='index.jsp'> MENU </a>	
 </body>
+<a href='dodajTwister.jsp'>Dodaj kolejny</a></br>
+<a href='index.jsp'>Menu</a></br>
 </html>

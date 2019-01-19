@@ -15,12 +15,14 @@
 <form action="Koszyk.jsp">
 <% 
 	for(Twister a: baza.getTwister()){
-		out.print(a.getId() + " " + a.getNazwa() + " </br>" +"<button type='submit' name='dodaj' value='" + a.getId() + "'>Dodaj do koszyka</button></br>"  );	
+		out.print(a.TwisterInfo() + " </br>" +"<button type='submit' name='dodaj' value='" + a.getId() + "'>Dodaj do koszyka</button></br>"  );	
 	}
 
 
 %>
-</form>>
+</form>
+</br>
+</br>
 <a href='index.jsp'> MENU </a>	
 
 </body>
