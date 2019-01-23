@@ -1,0 +1,632 @@
+{
+	"info": {
+		"_postman_id": "a0dbe125-328d-4e3f-aaea-4d9c9bd353e2",
+		"name": "Projekt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Marka",
+			"item": [
+				{
+					"name": "Dodanie Marki 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Yamaha\",\n\t\"origin\": \"Japonia\",\n\t\"yearOfCreation\": 1999\n}\n"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/mark",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"mark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dodanie Marki 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Honda\",\n\t\"origin\": \"Japonia\",\n\t\"yearOfCreation\": 1989\n}\n"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/mark",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"mark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wyswietla wszystkie marki",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/mark",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"mark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wyswietla marke o id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/mark/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"mark",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update marki o id=1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Suzuki\",\n\t\"origin\": \"Japonia\",\n\t\"yearOfCreation\": 1989\n}\n"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/mark/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"mark",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuwa marke o id=1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/mark/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"mark",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuwa wszystkie Marki",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/mark",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"mark"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Numer Vin",
+			"item": [
+				{
+					"name": "Dodanie numer Vin 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \t\"number\":\"AAA111222\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/number-vin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"number-vin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dodanie numeru Vin 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \t\"number\":\"AAA111BBB\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/number-vin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"number-vin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wyswietl Wszystkie numery Vin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/number-vin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"number-vin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wyświetl Vin o id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/number-vin/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"number-vin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Vin id = 1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"number\": \"Harnas\"\n}\n"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/number-vin/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"number-vin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuwa Vin o id = 1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/number-vin/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"number-vin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuwa wszystkie numery Vin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/number-vin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"number-vin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "Dodawanie Osoby 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n\t\t\"name\": \"Polo\",\n\t\t\"lastName\": \"Coelho\"\n\t}\n"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/person",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dodawanie Osoby 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n\t\t\"name\": \"Pobololo\",\n\t\t\"lastName\": \"Coelhooo\"\n\t}\n"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/person",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wyswietla Wszystkie Osoby",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/person",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wyswietla Osoby o id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/person/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"person",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update osoby o id=1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n\t\t\"name\": \"To\",\n\t\t\"lastName\": \"Dziala\"\n\t}\n"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/person/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"person",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuwanie osoby o id=1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/person/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"person",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuwa wszystkie Osoby",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/person",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"person"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Motocykl",
+			"item": [
+				{
+					"name": "Dodaj motocykl 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n\t\t\"mark\": {\"id\": 1},\n\t\t\"model\":\"Rbx-4\",\n\t\t\"dateOfProduction\":\"1999-10-10\",\n\t\t\"accident\": false,\n\t\t\"price\": 20000.998,\n\t\t\"numberVin\":{\"id\": 1},\n\t\t\"personBy\":[{\"id\":1}]\n\t\t\t\n\t}\n"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/motorcycle",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"motorcycle"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
