@@ -47,7 +47,7 @@ public class Motorcycle {
 		this.id = id;
 	}
 	
-	@ManyToOne(fetch = FetchType.EAGER, optional = false/*,cascade=CascadeType.ALL*/)  //cascadetype.remove
+	@ManyToOne(fetch = FetchType.EAGER, optional = false,cascade=CascadeType.REMOVE/*,cascade=CascadeType.ALL*/)  //cascadetype.remove
 	@JoinColumn(name = "producer_id", nullable = false)
 	public Producer getProducer() {
 		return producer;
@@ -82,7 +82,8 @@ public class Motorcycle {
 		this.price = price;
 	}
 	
-	@OneToOne(fetch = FetchType.EAGER)
+	@OneToOne(fetch = FetchType.EAGER, cascade=CascadeType.REMOVE)
+	@JoinColumn(name = "vin_id", unique=true)
 	public NumberVin getNumberVin() {
 		return numberVin;
 	}
@@ -90,7 +91,7 @@ public class Motorcycle {
 		this.numberVin = numberVin;
 	}
 	
-	@ManyToMany(fetch=FetchType.EAGER/*,cascade=CascadeType.ALL*/)
+	@ManyToMany(fetch=FetchType.EAGER,cascade=CascadeType.REMOVE/*,cascade=CascadeType.ALL*/)
 	@JsonIgnoreProperties({"motorcycles"})
 	public List<Person> getOwners() {
 		return owners;

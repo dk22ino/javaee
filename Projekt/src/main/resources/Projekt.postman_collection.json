@@ -597,7 +597,7 @@
 			"name": "Motocykl",
 			"item": [
 				{
-					"name": "Dodaj motocykl 1",
+					"name": "dodanie motocyklu 1",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -609,7 +609,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "\n\t{\n\t\t\"mark\": {\"id\": 1},\n\t\t\"model\":\"Rbx-4\",\n\t\t\"dateOfProduction\":\"1999-10-10\",\n\t\t\"accident\": false,\n\t\t\"price\": 20000.998,\n\t\t\"numberVin\":{\"id\": 1},\n\t\t\"personBy\":[{\"id\":1}]\n\t\t\t\n\t}\n"
+							"raw": "\n\t{\n\t\t\"producer\": {\"id\": 1},\n\t\t\"model\":\"Rbx-4\",\n\t\t\"dateOfProduction\":\"1999-10-10\",\n\t\t\"accident\": false,\n\t\t\"price\": 20000.998,\n\t\t\"numberVin\":{\"id\": 1},\n\t\t\"owners\":[{\"id\":1}]\n\t\t\t\n\t}"
 						},
 						"url": {
 							"raw": "localhost:8080/restejbjpa/api/motorcycle",
@@ -621,6 +621,115 @@
 								"restejbjpa",
 								"api",
 								"motorcycle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wyswietl wszystkie motory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/motorcycle",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"motorcycle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuwa wszystkie motory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/motorcycle",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"motorcycle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dodawanie motocyklu 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n\t\t\"producer\": {\"id\": 2},\n\t\t\"model\":\"Hayabusa\",\n\t\t\"dateOfProduction\":\"1999-10-10\",\n\t\t\"accident\": false,\n\t\t\"price\": 20000.998,\n\t\t\"numberVin\":{\"id\": 2},\n\t\t\"owners\":[{\"id\":2}]\n\t\t\t\n\t}"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/motorcycle",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"motorcycle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put zmienia motocykl o id =1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n\t\t\"producer\": {\"id\": 1},\n\t\t\"model\":\"Hayabusaaaaaaaa\",\n\t\t\"dateOfProduction\":\"1999-10-10\",\n\t\t\"accident\": false,\n\t\t\"price\": 20000.998,\n\t\t\"numberVin\":{\"id\": 1},\n\t\t\"owners\":[{\"id\":1}]\n\t\t\t\n\t}"
+						},
+						"url": {
+							"raw": "localhost:8080/restejbjpa/api/motorcycle/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restejbjpa",
+								"api",
+								"motorcycle",
+								"1"
 							]
 						}
 					},

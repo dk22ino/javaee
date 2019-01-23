@@ -41,7 +41,7 @@ public class MotorcycleRESTService {
 	}
 	
 	@PUT
-	@Path("/{motorcyclelId}")
+	@Path("/{motorcycleId}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Motorcycle updateMotorcycle(@PathParam("motorcycleId") long id, Motorcycle motor) {
@@ -57,7 +57,7 @@ public class MotorcycleRESTService {
 
 	@DELETE
 	@Path("/{motorId}")
-	public Response deleteMotocykl(@PathParam("motorlId") long id) {
+	public Response deleteMotocykl(@PathParam("motorId") long id) {
 		mm.deleteMotorcycle(id);
 		return Response.status(200).build();
 	}
