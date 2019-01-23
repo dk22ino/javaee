@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
         @NamedQuery(name = "motorcycle.all", query = "SELECT m FROM Motorcycle m"),
         @NamedQuery(name = "motorcycle.delete.all", query = "DELETE FROM Motorcycle"),
         @NamedQuery(name="motorcycle.getbyid", query="select m from Motorcycle m where m.id=:id"),
-        @NamedQuery(name="motorcycle.getPersonBy", query="select m.personBy from Motorcycle m where m.id=:id"),
+        @NamedQuery(name="motorcycle.getPersonBy", query="select m.owners from Motorcycle m where m.id=:id"),
         @NamedQuery(name="motorcycle.person", query="select p from Person p")
 })
 

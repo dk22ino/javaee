@@ -24,7 +24,7 @@
 							"raw": "{\n\t\"name\": \"Yamaha\",\n\t\"origin\": \"Japonia\",\n\t\"yearOfCreation\": 1999\n}\n"
 						},
 						"url": {
-							"raw": "localhost:8080/restejbjpa/api/mark",
+							"raw": "localhost:8080/restejbjpa/api/producer",
 							"host": [
 								"localhost"
 							],
@@ -32,7 +32,7 @@
 							"path": [
 								"restejbjpa",
 								"api",
-								"mark"
+								"producer"
 							]
 						}
 					},
@@ -54,7 +54,7 @@
 							"raw": "{\n\t\"name\": \"Honda\",\n\t\"origin\": \"Japonia\",\n\t\"yearOfCreation\": 1989\n}\n"
 						},
 						"url": {
-							"raw": "localhost:8080/restejbjpa/api/mark",
+							"raw": "localhost:8080/restejbjpa/api/producer",
 							"host": [
 								"localhost"
 							],
@@ -62,7 +62,7 @@
 							"path": [
 								"restejbjpa",
 								"api",
-								"mark"
+								"producer"
 							]
 						}
 					},
@@ -78,7 +78,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/restejbjpa/api/mark",
+							"raw": "localhost:8080/restejbjpa/api/producer",
 							"host": [
 								"localhost"
 							],
@@ -86,7 +86,7 @@
 							"path": [
 								"restejbjpa",
 								"api",
-								"mark"
+								"producer"
 							]
 						}
 					},
@@ -102,7 +102,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/restejbjpa/api/mark/1",
+							"raw": "localhost:8080/restejbjpa/api/producer/1",
 							"host": [
 								"localhost"
 							],
@@ -110,7 +110,7 @@
 							"path": [
 								"restejbjpa",
 								"api",
-								"mark",
+								"producer",
 								"1"
 							]
 						}
@@ -133,7 +133,7 @@
 							"raw": "{\n\t\"name\": \"Suzuki\",\n\t\"origin\": \"Japonia\",\n\t\"yearOfCreation\": 1989\n}\n"
 						},
 						"url": {
-							"raw": "localhost:8080/restejbjpa/api/mark/1",
+							"raw": "localhost:8080/restejbjpa/api/producer/1",
 							"host": [
 								"localhost"
 							],
@@ -141,7 +141,7 @@
 							"path": [
 								"restejbjpa",
 								"api",
-								"mark",
+								"producer",
 								"1"
 							]
 						}
@@ -164,7 +164,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/restejbjpa/api/mark/1",
+							"raw": "localhost:8080/restejbjpa/api/producer/1",
 							"host": [
 								"localhost"
 							],
@@ -172,7 +172,7 @@
 							"path": [
 								"restejbjpa",
 								"api",
-								"mark",
+								"producer",
 								"1"
 							]
 						}
@@ -189,7 +189,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/restejbjpa/api/mark",
+							"raw": "localhost:8080/restejbjpa/api/producer",
 							"host": [
 								"localhost"
 							],
@@ -197,7 +197,7 @@
 							"path": [
 								"restejbjpa",
 								"api",
-								"mark"
+								"producer"
 							]
 						}
 					},
