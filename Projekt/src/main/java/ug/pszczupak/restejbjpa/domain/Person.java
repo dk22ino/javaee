@@ -55,8 +55,8 @@ public class Person {
 		this.lastName = lastName;
 	}
 
-	@ManyToMany(fetch=FetchType.EAGER,mappedBy="personBy")
-	@JsonIgnoreProperties("personBy")
+	@ManyToMany(fetch=FetchType.EAGER,mappedBy="owners")
+	@JsonIgnoreProperties("owners")
 	public List<Motorcycle> getMotorcycles() {
 		return motorcycles;
 	}

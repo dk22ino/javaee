@@ -9,21 +9,21 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Mark")
+@Table(name = "Producer")
 @NamedQueries({
-        @NamedQuery(name = "mark.all", query = "SELECT m FROM Mark m"),
-        @NamedQuery(name = "mark.delete.all", query = "DELETE FROM Mark")
+        @NamedQuery(name = "producer.all", query = "SELECT p FROM Producer p"),
+        @NamedQuery(name = "producer.delete.all", query = "DELETE FROM Producer")
 })
 
 
-public class Mark {
+public class Producer {
 	
 	private long id;
 	private String name;		//nazwa
 	private String origin;		//pochodzenie
 	private int yearOfCreation;	//rok utworzenia
 	
-	public Mark() {
+	public Producer() {
 		
 	}
 	

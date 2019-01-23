@@ -1,6 +1,6 @@
 package ug.pszczupak.restejbjpa.rest;
 
-import ug.pszczupak.restejbjpa.domain.Mark;
+import ug.pszczupak.restejbjpa.domain.Person;
 import ug.pszczupak.restejbjpa.domain.NumberVin;
 import ug.pszczupak.restejbjpa.domain.Person;
 import ug.pszczupak.restejbjpa.service.PersonManager;

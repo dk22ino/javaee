@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 
 @Entity
-@Table(name = "Motorcycle")
+@Table(name = "motorcycle")
 @NamedQueries({
         @NamedQuery(name = "motorcycle.all", query = "SELECT m FROM Motorcycle m"),
         @NamedQuery(name = "motorcycle.delete.all", query = "DELETE FROM Motorcycle"),
@@ -28,13 +28,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Motorcycle {
 	private long id;
-	private Mark mark;
+	private Producer producer;
 	private String model;
 	private Date dateOfProduction;
 	private boolean accident;
 	private double price;
 	private NumberVin numberVin;
-	private List<Person> personBy = new ArrayList<>();
+	private List<Person> owners = new ArrayList<>();
 
 	
 	@Id
@@ -47,13 +47,13 @@ public class Motorcycle {
 		this.id = id;
 	}
 	
-	@ManyToOne(fetch = FetchType.EAGER, optional = false,cascade=CascadeType.ALL)
-	@JoinColumn(name = "mark_id", nullable = false)
-	public Mark getMark() {
-		return mark;
+	@ManyToOne(fetch = FetchType.EAGER, optional = false/*,cascade=CascadeType.ALL*/)  //cascadetype.remove
+	@JoinColumn(name = "producer_id", nullable = false)
+	public Producer getProducer() {
+		return producer;
 	}
-	public void setMark(Mark mark) {
-		this.mark = mark;
+	public void setProducer(Producer producer) {
+		this.producer = producer;
 	}
 	public String getModel() {
 		return model;
@@ -90,14 +90,14 @@ public class Motorcycle {
 		this.numberVin = numberVin;
 	}
 	
-	@ManyToMany(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
-	@JsonIgnoreProperties({"motorcycle"})
-	public List<Person> getPersonBy() {
-		return personBy;
+	@ManyToMany(fetch=FetchType.EAGER/*,cascade=CascadeType.ALL*/)
+	@JsonIgnoreProperties({"motorcycles"})
+	public List<Person> getOwners() {
+		return owners;
 	}
 	
 	@JsonProperty
-	public void setPersonBy(List<Person> personBy) {
-		this.personBy = personBy;
+	public void setOwners(List<Person> owners) {
+		this.owners = owners;
 	}
 }
